@@ -1,0 +1,9 @@
+<launch>
+
+  <arg name="output" default="screen" />
+  <arg name="name" default="watchdog" /> 
+
+  <node pkg="ros_watchdog" type="ros_watchdog" name="$(arg name)" 
+        output="$(arg output)" required="true" />
+
+</launch>
